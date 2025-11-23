@@ -1,0 +1,53 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.1.0] - 2025-11-23
+
+### Added
+- Server: Jest testing framework with 4 basic route tests
+- Server: Test coverage reporting (HTML, text, lcov formats)
+- Server: MongoDB Memory Server for isolated testing
+- Server: Swagger UI API documentation at `/api-docs`
+- Server: JSDoc comments for API endpoints
+- CHANGELOG.md files for server, client, and root
+- Semantic versioning across all packages
+
+### Changed
+- Server: Updated version from 1.0.0 to 1.1.0
+- Client: Updated version from 0.1.0 to 1.0.0
+- Server: Enhanced package.json with description and correct main file
+
+### Technical Details
+- See [server/CHANGELOG.md](server/CHANGELOG.md) for server-specific changes
+- See [client/CHANGELOG.md](client/CHANGELOG.md) for client-specific changes
+
+## [1.0.0] - 2025-11-22
+
+### Added
+- Initial project setup with monorepo structure
+- React frontend (client)
+- Express backend (server)
+- MongoDB Atlas database integration
+- Full-stack string management application
+- CORS-enabled API communication
+- Development environment setup
+
+### Client Features
+- String input form
+- Display list of saved strings
+- API integration with Axios
+
+### Server Features
+- REST API endpoints (GET, POST)
+- MongoDB connection and models
+- Environment configuration
+- Development server with Nodemon
+
+### Infrastructure
+- Git repository initialization
+- Environment variable management
+- Separate client/server architecture
