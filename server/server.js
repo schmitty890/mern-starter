@@ -3,6 +3,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import stringsRouter from './routes/strings.js';
+import { swaggerUi, specs } from './swagger.js';
 
 dotenv.config();
 
@@ -18,6 +19,9 @@ mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch((err) => console.error('MongoDB connection error:', err));
+
+// Swagger Documentation
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 // API Routes
 app.use('/api/strings', stringsRouter);
