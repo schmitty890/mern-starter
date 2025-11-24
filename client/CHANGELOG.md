@@ -25,10 +25,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Login and Sign Up buttons hidden when user is authenticated
 
 ### Fixed
+- Fixed invisible input fields on login and register pages (inputs were hidden by sr-only labels)
 - Fixed ESLint violations in authentication components
 - Added explicit button types to Sign Out buttons
 - Wrapped AuthContext value in useMemo to prevent unnecessary re-renders
-- Fixed label accessibility by nesting inputs within labels
+- Separated labels from inputs to maintain visibility while keeping accessibility
 - Escaped special characters in JSX text
 
 ### Dependencies
