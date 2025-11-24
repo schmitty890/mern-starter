@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/images/bank-of-america-logo.png';
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -12,9 +13,9 @@ function Navbar() {
             {/* Logo */}
             <a href="/" className="flex-shrink-0 flex items-center">
               <img
-                className="h-8 w-8"
-                src="https://via.placeholder.com/40"
-                alt="Logo"
+                className="h-8 w-auto"
+                src={logo}
+                alt="Bank of America Logo"
               />
             </a>
 

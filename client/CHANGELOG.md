@@ -5,6 +5,16 @@ All notable changes to the client project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2] - 2025-11-23
+
+### Changed
+- Replaced placeholder logo with Bank of America logo
+- Updated logo alt text for better accessibility
+- Changed logo width class from fixed to auto for better aspect ratio
+
+### Added
+- Bank of America logo image saved to src/assets/images/
+
 ## [1.1.1] - 2025-11-23
 
 ### Fixed
