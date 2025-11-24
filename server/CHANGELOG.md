@@ -5,6 +5,24 @@ All notable changes to the server project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2025-11-23
+
+### Added
+- ESLint with Airbnb base style guide configuration
+- ESLint plugins: import
+- NPM scripts for linting: `lint` and `lint:fix`
+
+### Changed
+- Fixed all ESLint violations in codebase
+- Updated test setup to use Object.keys() instead of for...in loop
+- Added consistent return statements in route handlers
+- Added eslint-disable comments for intentional await-in-loop usage
+
+### Dependencies
+- Added `eslint@^8.57.1`
+- Added `eslint-config-airbnb-base@^15.0.0`
+- Added `eslint-plugin-import@^2.32.0`
+
 ## [1.1.0] - 2025-11-23
 
 ### Added

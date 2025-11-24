@@ -3,12 +3,12 @@ import mongoose from 'mongoose';
 const stringSchema = new mongoose.Schema({
   value: {
     type: String,
-    required: true
+    required: true,
   },
   createdAt: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 });
 
 export default mongoose.model('String', stringSchema);

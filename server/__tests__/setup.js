@@ -16,8 +16,11 @@ beforeAll(async () => {
 // Clean up after each test
 afterEach(async () => {
   if (mongoose.connection.readyState !== 0) {
-    const collections = mongoose.connection.collections;
-    for (const key in collections) {
+    const { collections } = mongoose.connection;
+    const collectionKeys = Object.keys(collections);
+    // eslint-disable-next-line no-restricted-syntax
+    for (const key of collectionKeys) {
+      // eslint-disable-next-line no-await-in-loop
       await collections[key].deleteMany({});
     }
   }

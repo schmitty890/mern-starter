@@ -82,12 +82,12 @@ router.post('/', async (req, res) => {
     const newString = new StringModel({ value });
     await newString.save();
 
-    res.status(201).json({
+    return res.status(201).json({
       message: 'String saved successfully',
       data: newString,
     });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    return res.status(500).json({ error: error.message });
   }
 });
 
