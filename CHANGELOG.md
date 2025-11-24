@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2025-11-23
+
+### Added
+- Git pre-commit hook to enforce CHANGELOG.md updates on every commit
+- Comprehensive CHANGELOG update guide at `.github/CHANGELOG_GUIDE.md`
+- Automated detection of which CHANGELOG.md files need updating based on changed files
+- Helpful commit-time guidance with formatting examples and instructions
+
+### Changed
+- Development workflow now requires CHANGELOG.md updates before commits are accepted
+- Enhanced project documentation with changelog best practices
+
+### Infrastructure
+- Pre-commit hook intelligently routes updates to correct CHANGELOG (root, server, or client)
+- Colorized terminal output for better developer experience
+- Automatic date and format validation guidance
+
 ## [1.1.0] - 2025-11-23
 
 ### Added
