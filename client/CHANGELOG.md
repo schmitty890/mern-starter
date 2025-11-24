@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dark mode support in Footer component
 - Bank of America logo in Footer matching Navbar branding
 
+### Fixed
+- ESLint violations in Footer component (prop spreading, redundant roles, unused imports)
+
 ## [1.1.3] - 2025-11-23
 
 ### Fixed
