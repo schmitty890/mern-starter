@@ -24,8 +24,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Navbar now uses AuthContext to check authentication status
 - Login and Sign Up buttons hidden when user is authenticated
 
+### Fixed
+- Fixed ESLint violations in authentication components
+- Added explicit button types to Sign Out buttons
+- Wrapped AuthContext value in useMemo to prevent unnecessary re-renders
+- Fixed label accessibility by nesting inputs within labels
+- Escaped special characters in JSX text
+
 ### Dependencies
 - Added `react-router-dom@^7.9.6`
+- Added `prop-types` for component prop validation
 
 ## [1.2.2] - 2025-11-24
 

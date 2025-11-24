@@ -1,4 +1,6 @@
-import React, { useState, useRef, useEffect, useContext } from 'react';
+import React, {
+  useState, useRef, useEffect, useContext,
+} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import logo from '../assets/images/bank-of-america-logo.png';
@@ -133,6 +135,7 @@ function Navbar() {
                   {user.email}
                 </span>
                 <button
+                  type="button"
                   onClick={handleLogout}
                   className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
                 >
@@ -240,6 +243,7 @@ function Navbar() {
                     {user.email}
                   </div>
                   <button
+                    type="button"
                     onClick={handleLogout}
                     className="block w-full text-left bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-base font-medium"
                   >

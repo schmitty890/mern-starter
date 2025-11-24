@@ -1,4 +1,7 @@
-import { createContext, useState, useEffect } from 'react';
+import {
+  createContext, useState, useEffect, useMemo,
+} from 'react';
+import PropTypes from 'prop-types';
 
 export const AuthContext = createContext();
 
@@ -33,13 +36,17 @@ export function AuthProvider({ children }) {
     localStorage.removeItem('user');
   };
 
-  const value = {
+  const value = useMemo(() => ({
     user,
     token,
     login,
     logout,
     loading,
-  };
+  }), [user, token, loading]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
+
+AuthProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
