@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - JWT token generation with 7-day expiration
 - Swagger documentation for authentication endpoints
 - .env.example file with JWT_SECRET documentation
+- Error logging for authentication endpoints
+- Development mode error details in API responses
+
+### Fixed
+- Updated User model pre-save hook for Mongoose 9 compatibility (removed callback-style next())
+- Fixed "next is not a function" error in password hashing
 
 ### Security
 - Passwords are salted and hashed before storing in database

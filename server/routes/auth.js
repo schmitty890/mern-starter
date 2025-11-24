@@ -104,10 +104,14 @@ router.post('/register', async (req, res) => {
       },
     });
   } catch (error) {
+    console.error('Registration error:', error);
     if (error.name === 'ValidationError') {
       return res.status(400).json({ error: error.message });
     }
-    res.status(500).json({ error: 'Server error during registration' });
+    res.status(500).json({
+      error: 'Server error during registration',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
   }
 });
 
@@ -171,7 +175,11 @@ router.post('/login', async (req, res) => {
       },
     });
   } catch (error) {
-    res.status(500).json({ error: 'Server error during login' });
+    console.error('Login error:', error);
+    res.status(500).json({
+      error: 'Server error during login',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
   }
 });
 
