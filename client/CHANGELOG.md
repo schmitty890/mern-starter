@@ -5,6 +5,25 @@ All notable changes to the client project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-11-23
+
+### Added
+- Tailwind CSS for utility-first styling
+- Navbar component with responsive design
+- Dropdown menu in Navbar for Services
+- Mobile-responsive navigation menu
+- Logo placeholder in Navbar
+- Login and Sign Up buttons in Navbar
+
+### Changed
+- Updated index.css to include Tailwind directives
+- Added Navbar to App.js layout
+
+### Dependencies
+- Added `tailwindcss@^3.4.17`
+- Added `postcss@^8.5.1`
+- Added `autoprefixer@^10.4.20`
+
 ## [1.0.2] - 2025-11-23
 
 ### Added
