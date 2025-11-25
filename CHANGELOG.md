@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Swagger API documentation reference
 - Updated tech stack to include React Router, Tailwind CSS, JWT, and bcrypt
 - Added User model schema documentation
+- Updated copilot-instructions.md to reflect authentication architecture and new patterns
 
 ## [1.3.0] - 2025-11-23
 
