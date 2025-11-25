@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2025-11-25
+
+### Changed
+- Renamed project from "ctest" to "mern-starter"
+- Updated package.json name field to reflect new project name
+- Updated project references in README.md and copilot-instructions.md
+
 ## [1.4.0] - 2025-11-24
 
 ### Changed
