@@ -1,5 +1,5 @@
 <!-- .github/copilot-instructions.md - Guidance for AI coding agents working on this repository -->
-# Copilot / AI Agent Instructions for ctest
+# Copilot / AI Agent Instructions for mern-starter
 
 This repository is a MERN app with JWT authentication (React client + Express/Mongoose server). The goal of these instructions is to give an AI agent the immediate, actionable context needed to be productive.
 

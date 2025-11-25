@@ -5,7 +5,7 @@ A full-stack application built with the MERN stack (MongoDB, Express, React, Nod
 ## Project Structure
 
 ```
-ctest/
+mern-starter/
 ├── client/                 # React frontend
 │   ├── src/
 │   │   ├── components/
@@ -88,8 +88,8 @@ ctest/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/schmitty890/ctest.git
-cd ctest
+git clone https://github.com/schmitty890/mern-starter.git
+cd mern-starter
 ```
 
 ### 2. Install backend dependencies
